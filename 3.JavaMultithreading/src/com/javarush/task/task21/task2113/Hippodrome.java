@@ -51,7 +51,7 @@ public class Hippodrome {
         myList.add(horse2);
         myList.add(horse3);
         game = new Hippodrome(myList);
-
+        game.run();
 
     }
 }
