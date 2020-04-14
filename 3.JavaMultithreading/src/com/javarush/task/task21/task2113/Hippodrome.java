@@ -52,7 +52,7 @@ public class Hippodrome {
         myList.add(horse3);
         game = new Hippodrome(myList);
         game.run();
-
+        game.printWinner();
     }
     public Horse getWinner(){
         Horse maxDistHorse = horses.get(0);
