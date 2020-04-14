@@ -31,6 +31,9 @@ public class Horse {
         distance += speed * Math.random();
     }
     public void print(){
-
+        for (int i = 0; i < (int)distance; i++) {
+            System.out.print(".");
+        }
+        System.out.println(name);
     }
 }
