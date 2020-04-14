@@ -54,4 +54,17 @@ public class Hippodrome {
         game.run();
 
     }
+    public Horse getWinner(){
+        Horse maxDistHorse = horses.get(0);
+        double maxDist = 0.0;
+        for (Horse horse : horses)
+            if (horse.getDistance() > maxDist) {
+                maxDist = horse.getDistance();
+                maxDistHorse = horse;
+            }
+        return maxDistHorse;
+    }
+    public void printWinner(){
+        System.out.println("Winner is " + this.getWinner().getName() + "!");
+    }
 }
