@@ -14,6 +14,17 @@ public class Hippodrome {
         this.horses = horses;
     }
 
+    public void run(){
+
+    }
+
+    public void move(){
+
+    }
+
+    public void print(){
+
+    }
     static Hippodrome game;
     public static void main(String[] args) {
         Horse horse1 = new Horse("Horse1", 3.0, 0.0);
