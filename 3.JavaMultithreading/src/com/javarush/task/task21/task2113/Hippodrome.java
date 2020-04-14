@@ -15,7 +15,16 @@ public class Hippodrome {
     }
 
     public void run(){
-
+        for (int i = 1; i < 101; i++) {
+            this.move();
+            this.print();
+            try {
+                Thread.sleep(200);
+            }
+            catch (InterruptedException e){
+                e.getStackTrace();
+            }
+        }
     }
 
     public void move(){
@@ -23,7 +32,7 @@ public class Hippodrome {
     }
 
     public void print(){
-
+        
     }
     static Hippodrome game;
     public static void main(String[] args) {
@@ -35,5 +44,7 @@ public class Hippodrome {
         myList.add(horse2);
         myList.add(horse3);
         game = new Hippodrome(myList);
+
+
     }
 }
