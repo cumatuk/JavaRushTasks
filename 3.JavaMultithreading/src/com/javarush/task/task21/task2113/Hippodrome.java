@@ -34,7 +34,12 @@ public class Hippodrome {
     }
 
     public void print(){
-        
+        for (Horse horse : this.horses){
+            horse.print();
+        }
+        for (int i = 0; i < 10; i++) {
+            System.out.println();
+        }
     }
     static Hippodrome game;
     public static void main(String[] args) {
