@@ -43,7 +43,19 @@ public class Room {
         this.mouse = mouse;
     }
 
+    public static Room game;
+
+    public void run(){
+
+    }
+
+    public void print(){
+
+    }
+
     public static void main(String[] args) {
-        
+        Snake snake = new Snake(10, 10);
+        snake.setDirection(SnakeDirection.DOWN);
+        game = new Room(400, 400, snake);
     }
 }
