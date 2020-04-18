@@ -93,6 +93,23 @@ public class Room {
         //Рисуем все кусочки змеи
         //Рисуем мышь
         //Выводим все это на экран
+        String[][] myArr = new String[height][width];
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                myArr[i][j] = ".";
+            }
+        }
+        myArr[snake.getSections().get(0).getY()][snake.getSections().get(0).getX()] = "X";
+        for (int i = 1; i < snake.getSections().size(); i++) {
+            myArr[snake.getSections().get(i).getY()][snake.getSections().get(i).getX()] = "x";
+        }
+        myArr[mouse.getY()][mouse.getX()] = "^";
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                System.out.print(myArr[i][j]);
+            }
+            System.out.println();
+        }
     }
 
     public void eatMouse() {
