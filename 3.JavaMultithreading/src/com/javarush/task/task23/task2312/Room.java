@@ -82,7 +82,7 @@ public class Room {
                 else if (event.getKeyCode() == KeyEvent.VK_DOWN)
                     snake.setDirection(SnakeDirection.DOWN);
             }
-            System.out.println("start movement");
+
             snake.move();   //двигаем змею
             print();        //отображаем текущее состояние игры
             sleep();        //пауза между ходами
@@ -150,7 +150,6 @@ public class Room {
         game.createMouse();
         game.run();
     }
-
 
     private int initialDelay = 520;
     private int delayStep = 20;
