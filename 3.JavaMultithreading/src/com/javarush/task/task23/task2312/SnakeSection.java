@@ -9,6 +9,16 @@ public class SnakeSection {
         this.y = y;
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
     public int getX() {
         return x;
     }
