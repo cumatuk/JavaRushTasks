@@ -6,6 +6,7 @@ public class Arkanoid {
     private int width, height;
     private Ball ball;
     private Stand stand;
+    static Arkanoid game;
 
     public Ball getBall() {
         return ball;
@@ -52,6 +53,13 @@ public class Arkanoid {
 
     public void setHeight(int height) {
         this.height = height;
+    }
+
+    public void run(){
+
+    }
+    public void move(){
+
     }
 
     public static void main(String[] args) {
