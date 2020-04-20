@@ -57,7 +57,7 @@ public class Ball extends BaseObject {
         dy = -Math.sin(angle) * speed;
     }
     public void checkRebound(int minx, int maxx, int miny, int maxy){
-
+        
     }
 
 }
