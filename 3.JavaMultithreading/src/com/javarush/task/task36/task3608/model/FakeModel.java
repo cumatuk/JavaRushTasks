@@ -19,4 +19,9 @@ public class FakeModel implements Model {
         myList.add(new User("B", 2, 1));
         modelData.setUsers(myList);
     }
+
+    @Override
+    public void loadDeletedUsers() {
+        throw new UnsupportedOperationException("Unsupported operation in Fake model");
+    }
 }
